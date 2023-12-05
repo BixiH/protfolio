@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Grade Gunplas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6ffc2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        .gunpla-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .gunpla-card {
+            background-color: rgb(248, 247, 159);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .gunpla-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .gunpla-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gunpla-description {
+            padding: 15px;
+        }
+
+        .gunpla-description h2 {
+            font-size: 20px;
+            margin-top: 0;
+            color: #555;
+        }
+
+        .gunpla-description p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gunpla-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Master Grade Gunplas Collection</h1>
+        <div class="gunpla-grid">
+            <div class="gunpla-card">
+                <img src="image/real1.webp" alt="Gunpla 1">
+                <div class="gunpla-description">
+                    <h2>Gunpla Model 1</h2>
+                    <p>Master Grade ( MG) is a line of 1/100 scale Gunpla kits of the Mobile Suits in the Gundam meta series.</p>
+                </div>
+            </div>
+
+            <div class="gunpla-card">
+                <img src="image/real2.jpg" alt="Gunpla 2">
+                <div class="gunpla-description">
+                    <h2>Gunpla Model 2</h2>
+                    <p>Following the reorganization of Bandai Namco Group, box covers of reissue and future release of kits from September 2018 onward feature blue Bandai logo instead of the original red logo</p>
+                </div>
+            </div>
+
+            <div class="gunpla-card">
+                <img src="image/real3.jpg" alt="Gunpla 3">
+                <div class="gunpla-description">
+                    <h2>Gunpla Model 3</h2>
+                    <p> is a line of 1/100 scale Gunpla kits of the Mobile Suits in the Gundam meta series. The series was first produced in 1995 as part of the Gundam 15th Anniversary project. </p>
+                </div>
+            </div>
+
+            <div class="gunpla-card">
+                <img src="image/real4.webp" alt="Gunpla 4">
+                <div class="gunpla-description">
+                    <h2>Gunpla Model 4</h2>
+                    <p>Master Grade kits differ from other 1/100 scale Gunpla, with their level of detail, articulation, and proportions being second only to the Perfect Grade line.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

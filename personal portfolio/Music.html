@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gundam 0079</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #bgVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(248, 4, 4);
+            text-shadow: 2px 2px 4px #000000;
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 3em; /* Adjust this value to make it even bigger or smaller */
+        }
+
+        #audioToggle {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: rgb(250, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="bgVideo">
+        <source src="gundam.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>GUNDAM 0079</h1>
+    </div>
+    <div id="audioToggle" onclick="toggleAudio()">🔊 Unmute</div>
+
+    <script>
+        function toggleAudio() {
+            var video = document.getElementById('bgVideo');
+            if (video.muted) {
+                video.muted = false;
+                document.getElementById('audioToggle').innerHTML = "🔇 Mute";
+            } else {
+                video.muted = true;
+                document.getElementById('audioToggle').innerHTML = "🔊 Unmute";
+            }
+        }
+    </script>
+</body>
+</html>

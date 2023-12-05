@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-family: 'Italianno', cursive;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Increased size for better clickability */
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section h2, .section h3, .section h4 {
+    font-family: 'Italianno', cursive;
+    color: #0056b3; /* Example primary color */
+}
+
+.profile-pic {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Additional styles for other sections */

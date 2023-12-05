@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gaming Survey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #6081a0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: fit-content;
+            margin: 50px auto;
+            background-color: #1a7194;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, select, input[type="text"], input[type="email"], input[type="submit"] {
+            margin-bottom:auto;
+            padding:0%;
+        }
+
+        select, input[type="text"], input[type="email"] {
+            width:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gaming Survey</h1>
+        <form action="/submit-survey" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Do you play games? -->
+            <label for="playGames">Do you play games?</label>
+            <select id="playGames" name="playGames" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <!-- Platforms -->
+            <label for="platforms">What platforms do you use for gaming?</label>
+            <select id="platforms" name="platforms[]" required multiple>
+                <option value="PC">PC</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Games -->
+            <label for="games">What games do you play?</label>
+            <input type="text" id="games" name="games" placeholder="Enter the names of the games" required>
+
+            <!-- Genres -->
+            <label for="genres">What genres do you prefer?</label>
+            <select id="genres" name="genres[]" required multiple>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="RPG">RPG</option>
+                <option value="Simulation">Simulation</option>
+                <option value="Strategy">Strategy</option>
+                <option value="Sports">Sports</option>
+                <option value="Puzzle">Puzzle</option>
+            </select>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit Survey">
+        </form>
+    </div>
+</body>
+
+</html>

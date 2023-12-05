@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Tribute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #4a69bd; 
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+/* Header styles with background image and space for logo */
+.header {
+            background-color: #4a69bd;
+            background-image: url('your-header-bg-image.jpg'); /* Add your header background image URL here */
+            color: white;
+            padding: 10px 0;
+            text-align: center; /* Align items to center */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-logo {
+            margin-left: 3px; /* Space for logo */
+        }
+        .header-logo img {
+            height: 88px; /* Adjust logo size as needed */
+        }
+        .navbar {
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+        .navbar a {
+            color: rgb(255, 255, 255);
+            padding: 5px 40px;
+            text-decoration: none;
+            font-size: 30px; 
+            font-style: italic; /* Italic font for navigation */
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; 
+        }
+        .navbar a:hover {
+            background-color: #6a89cc; /* Hover effect color */
+            color: black;
+        }
+        .section {
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background-color: #f8c291; 
+        }
+        #home {
+            background-image: url('file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/cyberpunkyimage.webp'); /*background image URL */
+            background-size: cover;
+            color: rgb(255, 255, 255);
+        }
+        #home h1 {
+            font-size: 36px; /* Larger, bold font for main heading */
+            font-weight: bold;
+        }
+        .profile-pic {
+            width: 200px; 
+            height: auto;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%; /* Circular image */
+        }
+        .about-text {
+            text-align: left;
+            font-style: italic; /* Italic font for headings */
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Grid layout for projects */
+            gap: 10px;
+        }
+        .project-card {
+            padding: 10px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05); /* Hover effect for project cards */
+        }
+        .achievements-list {
+            list-style: none; 
+            padding: 0;
+        }
+        .achievements-list li {
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4a69bd; /* Color scheme */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+        }
+        .social-media-icons a {
+            margin: 0 10px;
+        }
+        .clear {
+            clear: both;
+        }
+        #about, #achievements, #contact {
+            background-size: cover;
+            color: rgb(255, 255, 255); /* Adjust text color if needed */
+        }
+        #projects{
+            background-size: cover;
+            color: rgb(214, 223, 99); /* Adjust text color if needed */
+        }
+        #about {
+            background-image: url('file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/aboutmebg.jpg'); /* about section background image URL*/
+        }
+
+        #projects {
+            background-image: url('file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/projectimage.webp'); /* projects section background image URL*/
+        }
+
+        #achievements {
+            background-image: url('file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/achievemenetbg.jpg'); /* Add your achievements section background image URL here */
+        }
+
+        #contact {
+            background-image: url('file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/contactbg.jpg'); /* Add your contact section background image URL here */
+        }
+
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="header-logo">
+            <img src="file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/icon2.webp" alt="Logo" /> <!-- logo -->
+        </div>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!--Home Section-->
+    <div id="home" class="section">
+        <h1>Welcome to My Personal Portfolio</h1>
+        <p>Discover my journey, projects, and achievements.</p>
+    </div>
+
+    <!--About Section-->
+    <div id="about" class="section">
+        <img src="file:///C:/Users/Administrator/Documents/GitHub/BixiH.github.io/personal%20portfolio/selfie.jpg" alt="Your Image" class="profile-pic">
+        <div class="about-text">
+            <h2>About Me</h2>
+        <p>Hello! I'm Bixi Huang, a passionate individual at the intersection of healthcare and technology. My journey has taken me from the halls of The College of New Jersey, where I pursued nursing, to the dynamic world of computer science and artificial intelligence. I thrive on challenges and believe in the power of adaptability and continuous learning.</p>
+        <h3>Background</h3>
+        <p>Originally an aspiring nurse, I navigated the complexities of human anatomy and patient care with curiosity and dedication. However, facing financial and linguistic hurdles as an international student, I learned early on the importance of resilience. A transformative experience in my family's machinery company in China opened my eyes to the fascinating world of technology. Here, I discovered my true calling in the digital realm, particularly in artificial intelligence and web development.</p>
+        <h3>Philosophy</h3>
+        <p>I believe that every challenge is an opportunity for growth. My diverse experiences have taught me to look beyond the conventional and embrace the potential of technology to transform lives. With a unique blend of healthcare knowledge and tech expertise, I am excited to explore innovative solutions in the tech industry.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <!--Projects Section-->
+    <div id="projects" class="section">
+<h2>Projects</h2>
+        <div class="projects-grid">
+           
+            <div class="project-card">
+                <h3>Gundam tribute page</h3>
+                <p>Created a simple webpage dedicated to someone I admire, featuring their image, name, and details about them using basic HTML and CSS. </p>
+                <a href="gundam.htm">Gundam Tribute page</a>
+            </div>
+            <div class="project-card">
+                <h3>Gaming Survery Page</h3>
+                <p>Developed a webpage that incorporates various form elements like text fields, checkboxes, radio buttons, and dates, using HTML and a bit of CSS for styling. </p>
+                <a href="Gamingsurvey.html">Gaming Survey Page</a>
+            </div>
+            <div class="project-card">
+                <h3>Gundam Photo Gallary</h3>
+                <p>Createed a one-page responsive photography website using flexbox and media queries, showcasing work with a gallery and providing contact information. </p>
+                <a href="gundamgallary.html">Gundam Photo Gallary</a>
+            </div>
+            <div class="project-card">
+                <h3>Kantonese Restaurant</h3>
+                <p>Create a detailed webpage for a restaurant, showcasing food items and drinks with prices and images, using CSS grid layouts and responsive design elements.</p>
+                <a href="restauranthome.html">Kantonese Restaurant</a>
+            </div>
+            <div class="project-card">
+                <h3>Gundam Base Event Page</h3>
+                <p> Designed a static webpage for an event or conference, including registration options, speaker and venue details, and a structured layout with headers and footers.</p>
+                <a href="Event.html">Gundam Base Grand Opening</a>
+            </div>
+            <div class="project-card">
+                <h3>Music Page</h3>
+                <p>Developed a webpage for a music store, featuring menus, buttons, links, and descriptions of music collections, ensuring responsiveness and user-friendly design. </p>
+                <a href="Music.html">Gundam 0079 Music Page</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Achievements Section-->
+    <div id="achievements" class="section">
+        <h2>Achievements</h2>
+        <ul class="achievements-list">
+        
+            <li>Academic Excellence:Successfully transitioned from nursing to computer science, demonstrating adaptability and commitment to learning.</li>
+            <h4>Academic Excellence</h4>
+        <p>Successfully transitioned fddrom nursing to computer science, demonstrating adaptability and commitment to learning.</p>
+        <p>Consistently advanced my skills and knowledge in computer science at Mercer County Community College.</p>
+        <h4>Professional Development</h4>
+        <p>Played a key role in designing and launching the website for my family's machinery company, establishing its digital presence.</p>
+        <p>Managed multiple social media accounts, including Douyin, Weibo, and Weixin, enhancing the company's international outreach.</p>
+        <h4>Technical Skills</h4>
+        <p>Gained proficiency in programming languages and web design, showcasing a blend of technical and creative abilities.</p>
+        <p>Developed a deep understanding and passion for artificial intelligence, positioning myself at the forefront of technological innovation.</p>
+         
+        </ul>
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media-icons">
+         
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://github.com/">GitHub</a>
+            <a href="https://twitter.com/?lang=zh">Twitter</a>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <p>© 2023 by Bixi Huang. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
